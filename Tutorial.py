@@ -3,11 +3,13 @@ game = [[0,0,0],
         [0,0,0],
         [0,0,0]]
 
-#printing a column index
-print('   a  b  c')
+#printing a column index, printing a row index, now #we have a coordinate to make a move, like c2
 
-#printing a row index
-for count_Row, row in enumerate(game, 1):
-    print(count_Row, row)
+def game_board():
+    print('   a  b  c')
+    for count, row in enumerate(game, 1):
+        print(count, row)
 
-#now we have a coordinate to make a move, like c2
+game[0][1] = 1
+
+game_board()
